@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-:root, :root[data-theme='dark'] {
+:root,
+:root[data-theme='dark'] {
   --primary-color: #F0F0F0;
 
   --primary-bg-color: #111217;
   --secondary-bg-color: #28292E;
   --primary-border-color: #28292E;
-	--secondary-border-color: #56575A;
+  --secondary-border-color: #56575A;
 
   --title-color: #F0F0F0;
   --text-color: #9A9A9C;
@@ -18,15 +18,15 @@
 :root[data-theme='light'] {
   --primary-color: #0B0B0F;
 
-	--primary-bg-color: #E9E9E9;
-	--secondary-bg-color: #C7C8C9;
-	--primary-border-color: #C7C8C9;
-	--secondary-border-color: #9A9A9C;
+  --primary-bg-color: #E9E9E9;
+  --secondary-bg-color: #C7C8C9;
+  --primary-border-color: #C7C8C9;
+  --secondary-border-color: #9A9A9C;
 
-	--title-color: #0B0B0F;
-	--text-color: #28292E;
-	--link-color: #28292E;
-	--icon-color: #56575A;
+  --title-color: #0B0B0F;
+  --text-color: #28292E;
+  --link-color: #28292E;
+  --icon-color: #56575A;
 }
 
 html[data-theme='light'] .brand__logo {
@@ -49,7 +49,7 @@ html[data-theme='light'] .technologies__logo {
 
 body {
   background: var(--primary-bg-color);
-  font-family:'Inter', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: var(--text-color);
 }
 
@@ -106,14 +106,18 @@ h4 {
   text-align: left;
 }
 
-h1, h2, h3 {
-  font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+h1,
+h2,
+h3 {
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   color: var(--title-color);
   font-weight: 200;
 }
 
-p, span, li {
+p,
+span,
+li {
   font-size: 1rem;
 }
 
@@ -137,8 +141,7 @@ p {
 }
 
 .header__brand .brand__logo {
-  width: 3.25rem;
-  height: 3.25rem;
+  height: 4rem;
 }
 
 #toggleTheme {
@@ -178,14 +181,15 @@ p {
   padding: 0.5rem 1rem;
 }
 
-.menu__link.active .menu__icon, 
+.menu__link.active .menu__icon,
 .menu__link.active .menu__text,
-.menu__link:hover .menu__icon, 
+.menu__link:hover .menu__icon,
 .menu__link:hover .menu__text {
   color: var(--primary-color);
 }
 
-.menu__icon, .menu__text {
+.menu__icon,
+.menu__text {
   color: var(--text-color);
 }
 
@@ -223,6 +227,7 @@ p {
   transition: ease-in-out .3s;
   cursor: pointer;
   color: var(--primary-color);
+  font-family: 'Open Sans', sans-serif;
 }
 
 .btn:hover {
@@ -230,7 +235,8 @@ p {
   transition: ease-in-out .3s;
 }
 
-.btn span, .btn i {
+.btn span,
+.btn i {
   font-size: 1.25rem;
   text-transform: uppercase;
 }
@@ -243,7 +249,10 @@ p {
   border: 1px solid var(--primary-color);
 }
 
-main, .projects, .about, .contact {
+main,
+.projects,
+.about,
+.contact {
   padding: 2.5rem 1rem;
 }
 
@@ -259,20 +268,14 @@ main {
   gap: 1.5rem;
 }
 
-.main__content2 iframe {
-  width: 100%;
-  aspect-ratio: 16/9;
-}
-
 .technologies {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   gap: 1.25rem;
-  padding: 6.25rem 1rem 2rem;
+  padding: 2rem 2rem;
   background: var(--secondary-bg-color);
-  margin-top: -5.5rem;
 }
 
 .technologies h2 {
@@ -302,6 +305,7 @@ main {
 
 .technologies__logo {
   height: 2.4rem;
+  fill: #C7C8C9;
 }
 
 .projects {
@@ -341,15 +345,18 @@ main {
   color: var(--title-color);
 }
 
-.card__list, .about__list {
+.card__list,
+.about__list {
   margin-left: 1.25rem
 }
 
-.card__item, .about__item {
+.card__item,
+.about__item {
   list-style: disc;
 }
 
-.card__buttons, .description__buttons {
+.card__buttons,
+.description__buttons {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -360,7 +367,7 @@ main {
 }
 
 .card__buttons .btn span {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .card__body .technologies__list {
@@ -387,7 +394,8 @@ main {
   gap: 1.5rem
 }
 
-.about__content1, .about__content2 {
+.about__content1,
+.about__content2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -421,7 +429,7 @@ main {
   font-size: 1.25rem;
 }
 
-.about__content2 .col1, 
+.about__content2 .col1,
 .about__content2 .col2 {
   display: flex;
   flex-direction: column;
@@ -433,7 +441,7 @@ main {
 .about__content2 .col1 .row2 {
   display: flex;
   flex-direction: column;
-  gap: .5rem; 
+  gap: .5rem;
 }
 
 .accordion__header {
@@ -462,7 +470,7 @@ main {
   border-radius: 0rem 0rem 0.25rem 0.25rem;
 }
 
-.accordion__item.active .accordion__header.end{
+.accordion__item.active .accordion__header.end {
   border-radius: 0;
 }
 
@@ -473,7 +481,7 @@ main {
   align-items: flex-start;
   gap: 0.625rem;
   border: 1px solid var(--primary-border-color);
-  }
+}
 
 .accordion__item.active .accordion__header {
   background: var(--secondary-bg-color);
@@ -549,13 +557,16 @@ footer p {
     font-size: 3rem;
   }
 
-  main, .projects, .about {
+  main,
+  .projects,
+  .about {
     padding: 8rem 6rem 4rem 6rem;
   }
 
   .contact {
     padding: 6rem;
   }
+
   .contact p {
     width: 80%;
   }
@@ -567,8 +578,7 @@ footer p {
   }
 
   .technologies {
-    padding: 6.25rem 6rem 2rem 6rem;
-    margin-top: -6rem;
+    padding: 6rem 6rem;
   }
 
   footer {
@@ -585,7 +595,7 @@ footer p {
     flex-direction: row-reverse;
     justify-content: space-between;
   }
-  
+
   .card__cover {
     width: 55%;
   }
@@ -594,11 +604,12 @@ footer p {
     gap: 5rem;
   }
 
-  .about__content1, .about__content2 {
+  .about__content1,
+  .about__content2 {
     display: grid;
     grid-template-columns: 34% 60%;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     gap: 4rem;
   }
 
@@ -632,7 +643,7 @@ footer p {
   .technologies {
     flex-direction: row;
     justify-content: space-between;
-    padding: 10rem 6rem 4rem;
+    padding: 5rem 6rem;
   }
 
   .technologies h2 {
@@ -648,12 +659,14 @@ footer p {
     width: 6rem;
     height: 6rem;
   }
-  
+
   .technologies__logo {
     height: 3rem;
   }
 
-  p, span, li {
+  p,
+  span,
+  li {
     font-size: 1.15rem;
   }
 
@@ -683,9 +696,11 @@ footer p {
   main {
     padding: 12rem 15rem 2rem;
   }
-  
-  .technologies, .projects, .about {
-    padding: 10rem 15rem 4rem;
+
+  .technologies,
+  .projects,
+  .about {
+    padding: 5rem 15rem;
   }
 
 }
